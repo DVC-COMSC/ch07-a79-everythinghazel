@@ -11,10 +11,8 @@ print ('Sum of rows: ', end=' ')
 for i in range(rnum):
 	rsum = sum(numbers[i])
 	print (rsum, end=' ')
-    for j in range(cnum)
+for j in range(cnum):
     rsum =+ numbers[i][j]
+    
 print(numbers[i][j], end = '')
 
-# ******************************
-# Make your Code
-# ******************************
