@@ -4,15 +4,25 @@ numbers = [     [99, 11, 66, 86, 55],
                [33, 77, 32, 33, 34]]
 
 
-rnum = len(numbers)
-cnum = len(numbers[0])
+print("sum of rows: ",end = "")
 
-print ('Sum of rows: ', end=' ')
-for i in range(rnum):
-	rsum = sum(numbers[i])
-	print (rsum, end=' ')
-for j in range(cnum):
-    rsum =+ numbers[i][j]
-    
-print(numbers[i][j], end = '')
+TOTAL = sum(numbers[0])
+INDEX = 0
 
+for i in range(len(numbers)):
+    print(sum(numbers[i]))
+    if(TOTAL<sum)(numbers[i]):
+        TOTAL = sum(numbers[i])
+        INDEX = i
+
+print("\nSum of columns: ", end = " ")
+GREATEST = numbers[0][0]
+for j in range(len(numbers[0])):
+    TOTAL = 0
+    for i in range(len(numbers[0])):
+        TOTAL += numbers [i][j]
+        if GREATEST<numbers[i][j]:
+            GREATEST = numbers[i][j]
+    print(TOTAL,end= " ")
+print(f"\nRow with greatest sum:{INDEX}")
+print(f"the greatest number: {GREATEST}")
